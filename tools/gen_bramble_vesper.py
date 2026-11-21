@@ -417,8 +417,11 @@ def main():
         target.mkdir(parents=True, exist_ok=True)
         if not PREVIEW_DIR:
             (out / "logo.svg").write_text(svg(name, spec["pale"], spec["accent"]))
-            for old in bg.glob("*.png"):
-                if "-nature" not in old.name:
+            # Replace only the files this script draws. Keep the generated
+            # photographs (02 and 07-11) when the procedural art is rebuilt.
+            for fname, _ in WALLPAPERS[name]:
+                old = bg / f"{fname}.png"
+                if old.exists():
                     old.unlink()
         first = None
         for fname, fn in WALLPAPERS[name]:

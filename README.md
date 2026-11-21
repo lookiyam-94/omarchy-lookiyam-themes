@@ -3,7 +3,7 @@
 Eight dark, minimal [Omarchy](https://omarchy.org/) themes. Each one is built
 around an invented mark and a single point of light: near-black backgrounds,
 thin grey line art, and one glowing accent. The original six themes include ten
-backgrounds each; Bramble and Vesper include six each.
+backgrounds each; Bramble and Vesper include eleven each.
 
 | Theme | Accent | Background | Motif |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
 - `backgrounds/` — 3840×2400 wallpapers (Graphite's photographic ones are
   upscaled to 7680×4800). Carbon, Meridian, Northline, Strata and Umbra each
   include minimal nature photographs alongside their abstract wallpapers.
-  Bramble and Vesper each have their mark, a dark nature photograph, three
+  Bramble and Vesper each have their mark, six dark nature photographs, three
   minimal scenes in the spirit of Graphite's, and a corner lockup.
 - `logo.svg` — Bramble's and Vesper's mark as a vector, pale line art plus
   the accent light.
