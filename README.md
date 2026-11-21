@@ -41,7 +41,14 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
   after a wrong password. Omarchy merges it into the `[lock]` section of the
   generated `shell.toml`.
 - `unlock.png` — mark and name on a transparent background, for the boot
-  disk-unlock screen.
+  disk-unlock screen (Plymouth).
+- `preview-unlock.png` — the unlock screen preview, made with
+  `omarchy plymouth preview`. It puts the theme in the unlock switcher
+  (_Style > Unlock_ in the Omarchy menu). To use one from the terminal:
+
+  ```bash
+  omarchy plymouth set by theme umbra
+  ```
 - `icons.theme` — the Yaru icon colour that matches the accent.
 
 ## Backgrounds
