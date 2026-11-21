@@ -1,8 +1,10 @@
-# Dark card with the theme accent over the blurred wallpaper.
-background       = "#060809"
+# Lock screen password card. The wallpaper stays behind it, blurred.
+# A near-black Vesper card with a thin border in the theme's one point
+# of light, which turns soft red after a wrong password.
+background       = "#08060b"
 background-alpha = 0.85
-text             = "#d4dddc"
-placeholder      = "#899997"
+text             = "#e2dde9"
+placeholder      = "#938aa0"
 text-error       = "#d4868d"
 border           = "#b6a0d6"
 border-active    = "#b6a0d6"

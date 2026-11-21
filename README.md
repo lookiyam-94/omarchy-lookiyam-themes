@@ -1,9 +1,9 @@
 # Lookiyam themes for Omarchy
 
-Eleven dark, minimal [Omarchy](https://omarchy.org/) themes. Each one is built
+Eight dark, minimal [Omarchy](https://omarchy.org/) themes. Each one is built
 around an invented mark and a single point of light: near-black backgrounds,
 thin grey line art, and one glowing accent. The original six themes include ten
-backgrounds each; the five nature themes include two each.
+backgrounds each; Bramble and Vesper include six each.
 
 | Theme | Accent | Background | Motif |
 |---|---|---|---|
@@ -13,14 +13,11 @@ backgrounds each; the five nature themes include two each.
 | [Strata](themes/strata) | `#e6b072` amber | `#14120f` | Stacked horizontal layers |
 | [Northline](themes/northline) | `#6ee7b7` mint | `#0c1013` | Vertical lines of light, aurora |
 | [Carbon](themes/carbon) | `#ff7b54` ember | `#121212` | Hexagons with one glowing atom |
-| [Lichen](themes/lichen) | `#9bbd88` moss green | `#0b100e` | Forest fronds and lichen |
-| [Vesper](themes/vesper) | `#b6a0d6` twilight violet | `#100d15` | Dusk arc over a ridge |
-| [Tidal](themes/tidal) | `#75c5bd` coastal teal | `#091213` | Tidal ripples |
-| [Bramble](themes/bramble) | `#c791a9` berry | `#140d12` | Thorn branch and berries |
-| [Rime](themes/rime) | `#b9cbd2` frost silver | `#0c1013` | Frost crystal |
+| [Vesper](themes/vesper) | `#b6a0d6` twilight violet | `#100d15` | Evening star over a setting sun |
+| [Bramble](themes/bramble) | `#c791a9` berry | `#140d12` | Thorned cane with one blackberry |
 
 The logos and names (Umbra, Meridian, Strata, Northline, Carbon, Graphite,
-Lichen, Vesper, Tidal, Bramble, Rime) are
+Vesper, Bramble) are
 made up for these wallpapers and do not belong to any real brand.
 
 ## Install
@@ -31,7 +28,7 @@ in by hand:
 ```bash
 git clone https://github.com/lookiyam-94/omarchy-lookiyam-themes
 cp -r omarchy-lookiyam-themes/themes/* ~/.config/omarchy/themes/
-omarchy theme set umbra        # or graphite, meridian, strata, northline, carbon, lichen, vesper, tidal, bramble, rime
+omarchy theme set umbra        # or graphite, meridian, strata, northline, carbon, vesper, bramble
 ```
 
 Cycle backgrounds with `omarchy theme bg next` or the background switcher.
@@ -43,8 +40,10 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
 - `backgrounds/` — 3840×2400 wallpapers (Graphite's photographic ones are
   upscaled to 7680×4800). Carbon, Meridian, Northline, Strata and Umbra each
   include minimal nature photographs alongside their abstract wallpapers.
-  Lichen, Vesper, Tidal, Bramble and Rime each have one named minimal wallpaper
-  and one dark nature photograph.
+  Bramble and Vesper each have their mark, a dark nature photograph, three
+  minimal scenes in the spirit of Graphite's, and a corner lockup.
+- `logo.svg` — Bramble's and Vesper's mark as a vector, pale line art plus
+  the accent light.
 - `preview.png` — the theme switcher preview.
 - `shell.lock.toml` — the lock screen: a near-black password card over the
   blurred wallpaper, with a thin border in the accent that turns soft red
@@ -64,7 +63,7 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
 ## Backgrounds
 
 The abstract wallpapers are drawn procedurally with NumPy and Pillow. The
-twenty-one additional nature photographs were generated with OpenAI image
+additional nature photographs were generated with OpenAI image
 generation and resized to 3840×2400. The later photographs in each theme
 take inspiration from Graphite's very dark compositions and restrained light.
 Graphite's former `11-orbits.png` is preserved in
@@ -81,7 +80,8 @@ The procedural scripts are in [`tools/`](tools/):
 | `gen_meridian.py` | Meridian |
 | `gen_marks.py` | The first logo studies (Strata, Umbra, Meridian, Northline) |
 | `gen_unlock_*.py` | `unlock.png` for each theme, trimmed and centred by `unlock_centre.py` |
-| `gen_nature.py` | Five nature theme marks, named wallpapers, palettes, and previews; takes the five generated photographs as input |
+| `gen_nature.py` | The first nature theme marks, palettes and photograph crops (superseded for Bramble and Vesper) |
+| `gen_bramble_vesper.py` | Bramble and Vesper: `logo.svg`, wallpapers, preview, `unlock.png` and lock card |
 
 Run them with [uv](https://docs.astral.sh/uv/) so nothing is installed globally,
 for example:

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <title>Bramble</title>
+  <g transform="translate(-0.5 -17.0)"><g fill="none" stroke="#eadbe2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M66 262 C 62 160, 128 78, 190 92 C 228 101, 240 138, 232 172"/>
+    <path d="M66 206 L 52 196"/>
+    <path d="M82 148 L 70 134"/>
+    <path d="M116 104 L 110 88"/>
+    <path d="M166 88 L 168 72"/>
+    <path d="M214 106 L 226 94"/>
+    <path d="M70 232 C 92 212, 120 214, 132 230 C 112 248, 86 248, 70 232 Z"/>
+  </g></g>
+  <g transform="translate(-0.5 -17.0)"><g fill="#c791a9">
+    <circle cx="232" cy="192" r="7"/>
+    <circle cx="220" cy="203" r="7"/>
+    <circle cx="244" cy="203" r="7"/>
+    <circle cx="232" cy="214" r="7"/>
+    <circle cx="221" cy="226" r="6"/>
+    <circle cx="243" cy="226" r="6"/>
+    <circle cx="232" cy="237" r="5"/>
+  </g></g>
+</svg>
