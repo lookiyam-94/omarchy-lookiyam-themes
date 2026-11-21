@@ -1,0 +1,12 @@
+# Dark card with the theme accent over the blurred wallpaper.
+background       = "#060809"
+background-alpha = 0.85
+text             = "#d4dddc"
+placeholder      = "#899997"
+text-error       = "#d4868d"
+border           = "#b6a0d6"
+border-active    = "#b6a0d6"
+border-error     = "#d4868d"
+border-alpha     = 1.0
+selection        = "#b6a0d6"
+selection-alpha  = 0.35

@@ -1,8 +1,9 @@
 # Lookiyam themes for Omarchy
 
-Six dark, minimal [Omarchy](https://omarchy.org/) themes. Each one is built
+Eleven dark, minimal [Omarchy](https://omarchy.org/) themes. Each one is built
 around an invented mark and a single point of light: near-black backgrounds,
-thin grey line art, and one glowing accent. Each theme includes ten backgrounds.
+thin grey line art, and one glowing accent. The original six themes include ten
+backgrounds each; the five nature themes include two each.
 
 | Theme | Accent | Background | Motif |
 |---|---|---|---|
@@ -12,8 +13,14 @@ thin grey line art, and one glowing accent. Each theme includes ten backgrounds.
 | [Strata](themes/strata) | `#e6b072` amber | `#14120f` | Stacked horizontal layers |
 | [Northline](themes/northline) | `#6ee7b7` mint | `#0c1013` | Vertical lines of light, aurora |
 | [Carbon](themes/carbon) | `#ff7b54` ember | `#121212` | Hexagons with one glowing atom |
+| [Lichen](themes/lichen) | `#9bbd88` moss green | `#0b100e` | Forest fronds and lichen |
+| [Vesper](themes/vesper) | `#b6a0d6` twilight violet | `#100d15` | Dusk arc over a ridge |
+| [Tidal](themes/tidal) | `#75c5bd` coastal teal | `#091213` | Tidal ripples |
+| [Bramble](themes/bramble) | `#c791a9` berry | `#140d12` | Thorn branch and berries |
+| [Rime](themes/rime) | `#b9cbd2` frost silver | `#0c1013` | Frost crystal |
 
-The logos and names (Umbra, Meridian, Strata, Northline, Carbon, Graphite) are
+The logos and names (Umbra, Meridian, Strata, Northline, Carbon, Graphite,
+Lichen, Vesper, Tidal, Bramble, Rime) are
 made up for these wallpapers and do not belong to any real brand.
 
 ## Install
@@ -24,7 +31,7 @@ in by hand:
 ```bash
 git clone https://github.com/lookiyam-94/omarchy-lookiyam-themes
 cp -r omarchy-lookiyam-themes/themes/* ~/.config/omarchy/themes/
-omarchy theme set umbra        # or graphite, meridian, strata, northline, carbon
+omarchy theme set umbra        # or graphite, meridian, strata, northline, carbon, lichen, vesper, tidal, bramble, rime
 ```
 
 Cycle backgrounds with `omarchy theme bg next` or the background switcher.
@@ -36,6 +43,8 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
 - `backgrounds/` — 3840×2400 wallpapers (Graphite's photographic ones are
   upscaled to 7680×4800). Carbon, Meridian, Northline, Strata and Umbra each
   include minimal nature photographs alongside their abstract wallpapers.
+  Lichen, Vesper, Tidal, Bramble and Rime each have one named minimal wallpaper
+  and one dark nature photograph.
 - `preview.png` — the theme switcher preview.
 - `shell.lock.toml` — the lock screen: a near-black password card over the
   blurred wallpaper, with a thin border in the accent that turns soft red
@@ -72,6 +81,7 @@ The procedural scripts are in [`tools/`](tools/):
 | `gen_meridian.py` | Meridian |
 | `gen_marks.py` | The first logo studies (Strata, Umbra, Meridian, Northline) |
 | `gen_unlock_*.py` | `unlock.png` for each theme, trimmed and centred by `unlock_centre.py` |
+| `gen_nature.py` | Five nature theme marks, named wallpapers, palettes, and previews; takes the five generated photographs as input |
 
 Run them with [uv](https://docs.astral.sh/uv/) so nothing is installed globally,
 for example:
