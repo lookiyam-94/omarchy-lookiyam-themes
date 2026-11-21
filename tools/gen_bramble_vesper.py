@@ -418,7 +418,7 @@ def main():
         if not PREVIEW_DIR:
             (out / "logo.svg").write_text(svg(name, spec["pale"], spec["accent"]))
             # Replace only the files this script draws. Keep the generated
-            # photographs (02 and 07-11) when the procedural art is rebuilt.
+            # photographs (02 and 07-10) when the procedural art is rebuilt.
             for fname, _ in WALLPAPERS[name]:
                 old = bg / f"{fname}.png"
                 if old.exists():
