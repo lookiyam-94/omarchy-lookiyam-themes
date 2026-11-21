@@ -36,6 +36,10 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
 - `backgrounds/` — 3840×2400 wallpapers (Graphite's photographic ones are
   upscaled to 7680×4800).
 - `preview.png` — the theme switcher preview.
+- `shell.lock.toml` — the lock screen: a near-black password card over the
+  blurred wallpaper, with a thin border in the accent that turns soft red
+  after a wrong password. Omarchy merges it into the `[lock]` section of the
+  generated `shell.toml`.
 - `unlock.png` — mark and name on a transparent background, for the boot
   disk-unlock screen.
 - `icons.theme` — the Yaru icon colour that matches the accent.
