@@ -64,7 +64,7 @@ NumPy and Pillow. The scripts are in [`tools/`](tools/):
 | `gen_umbra.py` | Umbra |
 | `gen_meridian.py` | Meridian |
 | `gen_marks.py` | The first logo studies (Strata, Umbra, Meridian, Northline) |
-| `gen_unlock_*.py` | `unlock.png` for each theme |
+| `gen_unlock_*.py` | `unlock.png` for each theme, trimmed and centred by `unlock_centre.py` |
 
 Run them with [uv](https://docs.astral.sh/uv/) so nothing is installed globally,
 for example:

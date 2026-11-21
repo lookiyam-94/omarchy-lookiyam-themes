@@ -1,5 +1,6 @@
 """Graphite unlock.png: open 'G' ring with a blue light bar, and the wordmark."""
 import sys
+from unlock_centre import centre
 from PIL import Image, ImageDraw, ImageFont
 
 SS = 4; W, H = 900, 180
@@ -22,4 +23,4 @@ for ch in "GRAPHITE":
 grey = grey.resize((W, H), Image.LANCZOS); blue = blue.resize((W, H), Image.LANCZOS)
 pale = Image.new("RGBA", (W, H), (228, 232, 238, 0)); pale.putalpha(grey)
 light = Image.new("RGBA", (W, H), (143, 191, 255, 0)); light.putalpha(blue)
-Image.alpha_composite(pale, light).save(sys.argv[1])
+centre(Image.alpha_composite(pale, light)).save(sys.argv[1])

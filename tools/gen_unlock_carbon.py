@@ -1,4 +1,5 @@
 import math, sys
+from unlock_centre import centre
 from PIL import Image, ImageDraw, ImageFont
 SS = 4; W, H = 900, 180
 a = Image.new("L", (W*SS, H*SS), 0); d = ImageDraw.Draw(a)
@@ -11,4 +12,4 @@ font = ImageFont.truetype("/usr/share/fonts/TTF/DejaVuSans-ExtraLight.ttf", 56*S
 x = 200*SS
 for ch in "CARBON":
     d.text((x, 56*SS), ch, font=font, fill=230); x += font.getlength(ch) + 40*SS
-img = Image.new("RGBA", (W, H), (255, 214, 196, 0)); img.putalpha(a.resize((W, H), Image.LANCZOS)); img.save(sys.argv[1])
+img = Image.new("RGBA", (W, H), (255, 214, 196, 0)); img.putalpha(a.resize((W, H), Image.LANCZOS)); centre(img).save(sys.argv[1])

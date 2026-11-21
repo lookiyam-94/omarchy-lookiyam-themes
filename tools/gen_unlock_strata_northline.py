@@ -1,4 +1,5 @@
 import sys
+from unlock_centre import centre
 from PIL import Image, ImageDraw, ImageFont
 which, out = sys.argv[1], sys.argv[2]
 SS = 4; W, H = 900, 180
@@ -22,4 +23,4 @@ for ch in text:
     dg.text((x, 56*SS), ch, font=font, fill=230); x += font.getlength(ch) + track*SS
 from PIL import ImageChops
 a = ImageChops.lighter(grey, lit).resize((W, H), Image.LANCZOS)
-img = Image.new("RGBA", (W, H), col + (0,)); img.putalpha(a); img.save(out)
+img = Image.new("RGBA", (W, H), col + (0,)); img.putalpha(a); centre(img).save(out)

@@ -1,4 +1,5 @@
 import sys
+from unlock_centre import centre
 from PIL import Image, ImageDraw, ImageFont, ImageChops
 SS = 4; W, H = 900, 180
 a = Image.new("L", (W*SS, H*SS), 0); d = ImageDraw.Draw(a)
@@ -15,4 +16,4 @@ for ch in "UMBRA":
     x += font.getlength(ch) + 40*SS
 a = a.resize((W, H), Image.LANCZOS)
 img = Image.new("RGBA", (W, H), (214, 228, 255, 0)); img.putalpha(a)
-img.save(sys.argv[1])
+centre(img).save(sys.argv[1])
