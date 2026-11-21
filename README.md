@@ -2,7 +2,7 @@
 
 Six dark, minimal [Omarchy](https://omarchy.org/) themes. Each one is built
 around an invented mark and a single point of light: near-black backgrounds,
-thin grey line art, and one glowing accent.
+thin grey line art, and one glowing accent. Each theme includes ten backgrounds.
 
 | Theme | Accent | Background | Motif |
 |---|---|---|---|
@@ -34,7 +34,8 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
 - `colors.toml` — the palette. Omarchy generates the terminal, Hyprland, btop,
   Neovim, VS Code and the rest from it.
 - `backgrounds/` — 3840×2400 wallpapers (Graphite's photographic ones are
-  upscaled to 7680×4800).
+  upscaled to 7680×4800). Carbon, Meridian, Northline, Strata and Umbra each
+  include minimal nature photographs alongside their abstract wallpapers.
 - `preview.png` — the theme switcher preview.
 - `shell.lock.toml` — the lock screen: a near-black password card over the
   blurred wallpaper, with a thin border in the accent that turns soft red
@@ -53,8 +54,14 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
 
 ## Backgrounds
 
-Everything except Graphite's photographic landscapes is drawn procedurally with
-NumPy and Pillow. The scripts are in [`tools/`](tools/):
+The abstract wallpapers are drawn procedurally with NumPy and Pillow. The
+twenty-one additional nature photographs were generated with OpenAI image
+generation and resized to 3840×2400. The later photographs in each theme
+take inspiration from Graphite's very dark compositions and restrained light.
+Graphite's former `11-orbits.png` is preserved in
+[`retired-backgrounds/graphite/`](retired-backgrounds/graphite/) so it is no
+longer one of the ten selectable backgrounds.
+The procedural scripts are in [`tools/`](tools/):
 
 | Script | Draws |
 |---|---|
