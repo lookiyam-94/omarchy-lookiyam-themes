@@ -40,7 +40,7 @@ Cycle backgrounds with `omarchy theme bg next` or the background switcher.
   blurred wallpaper, with a thin border in the accent that turns soft red
   after a wrong password. Omarchy merges it into the `[lock]` section of the
   generated `shell.toml`.
-- `unlock.png` — mark and name on a transparent background, for the boot
+- `unlock.png` — the mark alone on a transparent background, for the boot
   disk-unlock screen (Plymouth).
 - `preview-unlock.png` — the unlock screen preview, made with
   `omarchy plymouth preview`. It puts the theme in the unlock switcher
