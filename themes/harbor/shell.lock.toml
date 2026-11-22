@@ -1,0 +1,12 @@
+# Lock screen password card over the blurred wallpaper.
+background       = "#0e182a"
+background-alpha = 0.90
+text             = "#ece9e1"
+placeholder      = "#b7c3ce"
+text-error       = "#e79691"
+border           = "#d9bd83"
+border-active    = "#d9bd83"
+border-error     = "#e79691"
+border-alpha     = 1.0
+selection        = "#d9bd83"
+selection-alpha  = 0.35
