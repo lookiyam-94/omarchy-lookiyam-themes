@@ -1,14 +1,14 @@
 # Lock screen password card. The wallpaper stays behind it, blurred.
 # The card has a thin border in the theme's one point of light,
 # which turns soft red after a wrong password.
-background       = "#090909"
+background       = "#0c0e10"
 background-alpha = 0.85
-text             = "#e6e1de"
-placeholder      = "#8a8380"
-text-error       = "#f2777a"
-border           = "#ff7b54"
-border-active    = "#ff7b54"
-border-error     = "#f2777a"
+text             = "#d9dde0"
+placeholder      = "#8c959d"
+text-error       = "#e66e6e"
+border           = "#ff861a"
+border-active    = "#ff861a"
+border-error     = "#e66e6e"
 border-alpha     = 1.0
-selection        = "#ff7b54"
+selection        = "#ff861a"
 selection-alpha  = 0.35
